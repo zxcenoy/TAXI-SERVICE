@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Стиль для желтой кнопки "Создать аккаунт" -->
+    <style name="YellowButtonStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:backgroundTint">#FFC107</item> <!-- Желтый фон -->
+        <item name="android:textColor">#FFFFFF</item> <!-- Белый текст -->
+        <item name="android:textAllCaps">false</item> <!-- Отключаем заглавные буквы -->
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="cornerRadius">10dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:gravity">center</item> <!-- Центрирование текста -->
+    </style>
+
+    <!-- Стиль для белой кнопки "Авторизация" -->
+    <style name="OutlineButtonStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:backgroundTint">#FFFFFF</item> <!-- Белый фон -->
+        <item name="android:textColor">#FFC107</item> <!-- Желтый текст -->
+        <item name="android:textAllCaps">false</item> <!-- Отключаем заглавные буквы -->
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:gravity">center</item> <!-- Центрирование текста -->
+        <item name="cornerRadius">10dp</item>
+        <item name="strokeWidth">2dp</item>
+        <item name="strokeColor">#FFC107</item>
+    </style>
+</resources>

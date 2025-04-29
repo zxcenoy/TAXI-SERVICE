@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:padding="16dp">
+
+    <!-- Текст о времени прибытия -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ваш водитель прибудет через 5 минут"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Информация о водителе -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="8dp"
+        android:background="@android:color/transparent">
+
+        <!-- Фото профиля -->
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/driver"
+        android:scaleType="centerCrop"
+        android:background="@android:color/transparent" />
+
+        <!-- Информация о водителе -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginStart="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Валерий Павлов"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ford Mustang GT"
+                android:textSize="14sp"
+                android:textColor="#666666"
+                android:layout_marginTop="4dp" />
+        </LinearLayout>
+
+        <!-- Изображение автомобиля -->
+        <ImageView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/mustang"
+        android:backgroundTint="@android:color/transparent" />
+    </LinearLayout>
+
+    <!-- Разделитель -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CCCCCC"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Способ оплаты -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@android:color/transparent"
+    android:padding="16dp"
+    android:gravity="center_vertical">
+
+    <!-- Логотип Visa -->
+    <ImageView
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/visa"
+    android:backgroundTint="@android:color/transparent" />
+
+    <!-- Номер карты -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginStart="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="**** **** **** 8970"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Expires: 12/26"
+            android:textSize="12sp"
+            android:textColor="#666666"
+            android:layout_marginTop="4dp" />
+    </LinearLayout>
+
+    <!-- Цена -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="750 ₽"
+        android:textSize="16sp"
+        android:textColor="#EDAF10"
+        android:textStyle="bold" />
+</LinearLayout>
+
+    <!-- Разделитель -->
+<View
+android:layout_width="match_parent"
+android:layout_height="1dp"
+android:background="#CCCCCC"
+android:layout_marginTop="16dp"
+android:layout_marginBottom="16dp" />
+
+    <!-- Кнопки управления -->
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="horizontal"
+android:gravity="center_vertical">
+
+
+
+<!-- Кнопка "Отменить заказ" -->
+<Button
+    style="@style/YellowButtonStyle"
+    android:id="@+id/cancelOrderButton"
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+
+android:text="Отменить заказ"
+
+android:textAllCaps="false"
+android:padding="12dp" />
+</LinearLayout>
+    </LinearLayout>

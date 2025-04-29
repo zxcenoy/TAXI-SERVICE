@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:padding="16dp">
+
+    <!-- Карточки тарифов -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="16dp">
+
+        <!-- Карточка "Эконом" -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+
+        android:padding="16dp"
+        android:layout_marginEnd="8dp">
+
+        <!-- Изображение автомобиля -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:src="@drawable/econom_car"
+        android:scaleType="fitCenter" />
+
+        <!-- Текст "Эконом" -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Эконом"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp" />
+
+        <!-- Цена -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="300 ₽."
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_marginTop="4dp" />
+    </LinearLayout>
+
+    <!-- Карточка "Комфорт" -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+
+    android:padding="16dp">
+
+    <!-- Изображение автомобиля -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:src="@drawable/comfort_car"
+    android:scaleType="fitCenter" />
+
+    <!-- Текст "Комфорт" -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Комфорт"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp" />
+
+    <!-- Цена -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="500 ₽."
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:layout_marginTop="4dp" />
+</LinearLayout>
+    </LinearLayout>
+
+    <!-- Разделитель -->
+<View
+android:layout_width="match_parent"
+android:layout_height="1dp"
+android:background="#CCCCCC"
+android:layout_marginBottom="16dp" />
+
+    <!-- Информация об адресах -->
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical"
+>
+
+<!-- Поле "Откуда" -->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:padding="8dp">
+
+    <!-- Маркер -->
+    <ImageView
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:src="@drawable/ic_marker"
+    android:backgroundTint="@android:color/transparent" />
+
+    <!-- Текст -->
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Ул. Кирова 18/2. подъезд 1"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:layout_marginStart="8dp" />
+</LinearLayout>
+
+<!-- Поле "Куда" -->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:padding="8dp">
+
+    <!-- Маркер -->
+    <ImageView
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:src="@drawable/ic_marker"
+    android:backgroundTint="@android:color/transparent" />
+
+    <!-- Текст -->
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Ул. Ленина 24/1"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:layout_marginStart="8dp" />
+</LinearLayout>
+
+<!-- Поле "Время" -->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:padding="8dp">
+
+    <!-- Маркер -->
+    <ImageView
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:src="@drawable/ic_clock"
+    android:backgroundTint="@android:color/transparent" />
+
+    <!-- Текст -->
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="18:00"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:layout_marginStart="8dp" />
+</LinearLayout>
+</LinearLayout>
+
+    <!-- Разделитель -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CCCCCC"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Дополнительные услуги -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Дополнительные услуги"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Чекбоксы для дополнительных услуг -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <!-- Перевозка животных -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp">
+
+            <!-- Чекбокс -->
+            <CheckBox
+                android:id="@+id/animalTransportCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#EDAF10"
+            android:layout_marginEnd="8dp" />
+
+            <!-- Текст -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Перевозка животных"
+                android:textSize="16sp"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <!-- Детское кресло -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp">
+
+            <!-- Чекбокс -->
+            <CheckBox
+                android:id="@+id/childSeatCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#EDAF10"
+            android:layout_marginEnd="8dp" />
+
+            <!-- Текст -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Детское кресло"
+                android:textSize="16sp"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <!-- Некурящий салон -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <!-- Чекбокс -->
+            <CheckBox
+                android:id="@+id/nonSmokingCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:buttonTint="#EDAF10"
+            android:layout_marginEnd="8dp" />
+
+            <!-- Текст -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Некурящий салон"
+                android:textSize="16sp"
+                android:textColor="#000000" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Разделитель -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#CCCCCC"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Кнопка "Заказать такси" -->
+    <Button
+        style="@style/YellowButtonStyle"
+        android:id="@+id/orderTaxiButton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Заказать такси"
+    android:textAllCaps="false"
+    android:layout_marginTop="16dp" />
+
+    <!-- Кнопка возврата (стрелка вверх) -->
+    <ImageView
+        android:id="@+id/backButton"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/up_arrow"
+    android:backgroundTint="@android:color/transparent"
+    android:contentDescription="Вернуться назад"
+    android:layout_gravity="end"
+    android:layout_marginTop="16dp"
+    android:layout_marginEnd="16dp" />
+</LinearLayout>
