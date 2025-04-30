@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TAXI SERVICE</string>
+    <string name="marginStart">16dp</string>
+    <string name="marginEnd">16dp</string>
+</resources>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:padding="16dp">
+
+    <!-- Верхняя панель -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingBottom="16dp">
+
+        <!-- Кнопка меню -->
+        <ImageView
+            android:id="@+id/menuButton"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/menu"
+        android:backgroundTint="@android:color/transparent"
+        android:contentDescription="Меню"
+        android:onClick="openDrawer" />
+
+        <!-- Заголовок -->
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Настройка профиля"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:gravity="center"
+            android:layout_marginStart="16dp" />
+    </LinearLayout>
+
+    <!-- Аватар пользователя -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="16dp">
+
+        <!-- Аватар -->
+        <ImageView
+            android:id="@+id/avatarImageView"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:src="@drawable/driver"
+        android:scaleType="centerCrop"
+        android:onClick="openGallery" />
+
+        <!-- Информация о пользователе -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginStart="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Игорь Басманов"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Поля ввода -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="16dp">
+
+        <!-- Поле ввода Логин -->
+        <EditText
+            android:id="@+id/loginEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Логин"
+            android:inputType="text"
+            android:backgroundTint="@android:color/transparent"
+        android:padding="16dp"
+        android:layout_marginBottom="8dp" />
+
+        <!-- Поле ввода Email -->
+        <EditText
+            android:id="@+id/emailEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ваш E-mail"
+            android:inputType="textEmailAddress"
+            android:backgroundTint="@android:color/transparent"
+            android:padding="16dp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Поле ввода ФИО -->
+        <EditText
+            android:id="@+id/fioEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ФИО"
+            android:inputType="textPersonName"
+            android:backgroundTint="@android:color/transparent"
+            android:padding="16dp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Поле ввода Пароль -->
+        <EditText
+            android:id="@+id/passwordEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ваш пароль"
+            android:inputType="textPassword"
+            android:backgroundTint="@android:color/transparent"
+            android:padding="16dp"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Поле ввода Адрес -->
+        <EditText
+            android:id="@+id/addressEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ваш адрес"
+            android:inputType="textPostalAddress"
+            android:backgroundTint="@android:color/transparent"
+            android:padding="16dp"
+            android:layout_marginBottom="8dp" />
+    </LinearLayout>
+
+    <!-- Кнопка "Обновить данные" -->
+    <Button
+        style="@style/YellowButtonStyle"
+        android:id="@+id/updateButton"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Обновить данные"
+    android:textAllCaps="false"
+    android:layout_marginTop="16dp" />
+</LinearLayout>

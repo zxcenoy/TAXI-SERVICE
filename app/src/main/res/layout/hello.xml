@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#FFFFFF">
+
+    <!-- ImageView для иллюстрации -->
+    <ImageView
+        android:id="@+id/illustrationImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/hello"
+        android:layout_marginTop="64dp" />
+
+    <!-- TextView для текста "Добро пожаловать" -->
+    <TextView
+        android:id="@+id/welcomeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Добро пожаловать"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginTop="32dp" />
+
+    <!-- Кнопка "Создать аккаунт" -->
+    <Button
+        android:id="@+id/createAccountButton"
+        style="@style/YellowButtonStyle"
+        android:text="Создать аккаунт"
+        android:layout_marginTop="64dp" />
+
+    <!-- Кнопка "Авторизация" -->
+    <Button
+        android:id="@+id/loginButton"
+        style="@style/OutlineButtonStyle"
+        android:text="Авторизация"
+        android:layout_marginTop="16dp"
+        />
+
+</LinearLayout>

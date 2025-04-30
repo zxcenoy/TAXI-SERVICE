@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    android:padding="16dp">
+
+    <!-- Шапка -->
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical">
+
+<!-- Кнопка "Назад" -->
+<ImageView
+    android:id="@+id/backButton"
+    android:layout_width="24dp"
+    android:layout_height="24dp"
+    android:src="@drawable/back_arrow"
+    android:backgroundTint="#000000"
+    android:contentDescription="Назад"
+    android:onClick="onBackPressed" />
+
+<!-- Текст "Назад" -->
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Назад"
+    android:textSize="16sp"
+    android:textColor="#000000"
+    android:layout_marginStart="8dp" />
+
+<!-- Заполнитель для выравнивания -->
+<View
+    android:layout_width="0dp"
+    android:layout_height="0dp"
+    android:layout_weight="1" />
+</LinearLayout>
+
+    <!-- Заголовок "Авторизация" -->
+<TextView
+android:id="@+id/loginTitle"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:text="Авторизация"
+android:textSize="20sp"
+android:textColor="#000000"
+android:fontFamily="sans-serif-medium"
+android:layout_gravity="center_horizontal"
+android:layout_marginTop="16dp" />
+
+    <!-- Поле ввода Телефон или Email -->
+<EditText
+android:id="@+id/emailOrPhoneEditText"
+android:layout_width="match_parent"
+android:layout_height="50dp"
+android:hint="Телефон или E-mail"
+android:background="@android:color/transparent"
+    android:padding="16dp"
+    android:layout_marginTop="16dp" />
+
+    <!-- Поле ввода Пароля -->
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:orientation="horizontal"
+    android:background="@android:color/transparent"
+    android:padding="8dp"
+    android:layout_marginTop="16dp">
+
+<!-- Поле ввода пароля -->
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="*********"
+
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="25dp"
+        app:endIconMode="password_toggle">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/pasinput"
+            android:inputType="numberPassword"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+<!-- Кнопка показа/скрытия пароля -->
+<ImageView
+    android:id="@+id/showPasswordToggle"
+    android:layout_width="24dp"
+    android:layout_height="24dp"
+    android:src="@drawable/ic_eye_open"
+    android:backgroundTint="@android:color/transparent"
+    android:contentDescription="Показать/Скрыть пароль"
+    android:onClick="togglePasswordVisibility" /> <!-- Метод обработки нажатия -->
+</LinearLayout>
+
+    <!-- Кнопка "Войти" -->
+<Button
+    style="@style/YellowButtonStyle"
+    android:id="@+id/loginButton"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:text="Войти"
+    android:layout_marginTop="16dp" />
+
+    <!-- Текст "Нет аккаунта? Зарегистрируйтесь" -->
+<LinearLayout
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:orientation="horizontal"
+android:gravity="center"
+android:layout_marginTop="16dp">
+
+<TextView
+    android:id="@+id/registerText"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Нет аккаунта? "
+    android:textSize="16sp"
+    android:textColor="#000000" />
+
+<!-- Ссылка "Зарегистрируйтесь" -->
+<TextView
+    android:id="@+id/registerLink"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Зарегистрируйтесь"
+    android:textSize="16sp"
+    android:textColor="#EDAF10"
+android:clickable="true"
+android:focusable="true"
+android:onClick="onRegisterClick" />
+</LinearLayout>
+    </LinearLayout>
